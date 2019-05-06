@@ -7,6 +7,7 @@
   <script src="https://use.fontawesome.com/2214a7171f.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+
   
 </head>
 <body>
@@ -14,22 +15,22 @@
 
   <header>
       <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
         <div class="container">
-          <a class="navbar-brand" href="#"><strong>JR</strong></a>
+          <a class="navbar-brand" href="index.html"><strong>Home</strong></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse " id="navbarSupportedContent-7">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">About Me<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#aboutSection"><Strong>About Me</Strong><span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ml auto ">
+                <a class="nav-link" href="#portfolioSection"><strong>Portfolio</strong></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="#contactSection"><strong>Contact</strong></a>
               </li>
             </ul>
             
@@ -37,7 +38,7 @@
         </div>
       </nav>
       <!-- Navbar -->
-   <!-- Full Page Intro -->
+      <!-- Full Page Intro -->
    <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <!-- Mask -->
     <div class="mask  align-items-center">
@@ -50,17 +51,15 @@
             <h1 class="text-uppercase font-weight-bold mb-0 pt-md-5 pt-5"><strong>Joel Ramirez</strong></h1>
             <hr class="hr-light my-4">
             <h5 class="text-uppercase mb-4"><strong>Web Design</strong></h5>
-            
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
           </div>
-          <!--Grid column-->
+          <!-- Content -->
         </div>
-        <!--Grid row-->
+        <!-- Mask & flexbox options-->
       </div>
-      <!-- Content -->
-    </div>
-    <!-- Mask-->
-  </div>
-  <!-- Full Page Intro -->
+      <!-- Full Page Intro -->
 </header>
 <!-- Main navigation -->
 <!--Main Layout-->
@@ -68,7 +67,7 @@
     <div class="container">
           <div class="card col-xlg-8 mt-4">
             <div class="card-body">
-              <h4 class="card-title">About Me</h4>
+              <h4 class="card-title" id="aboutSection">About Me</h4>
               <hr>
               <img alt="Profile Picture" class="float-left col-sm-6" src="assets/images/astronaut-astronomy-exploration-33684.jpg"> <p>Lorem ipsum dolor amet 90's tumeric venmo godard photo booth vaporware selfies semiotics. Edison bulb wolf gentrify beard shabby chic ennui sartorial cloud bread cornhole. Four loko messenger bag enamel pin tumeric knausgaard literally jianbing glossier. Franzen leggings lumbersexual intelligentsia flannel paleo man bun before they sold out stumptown enamel pin, tbh cold-pressed.</p>
 
@@ -79,11 +78,104 @@
           </div><!-- card col-xlg-8 -->
       </div><!-- container -->
 <!--Main Layout-->
+<!-- Portfolio section -->
+<section class="portfolio bg-white" id="portfolioSection">
+  <div class="container">
+    <h1 id="titleColor"><strong>Portfolio</strong></h1>
+  
+
+    <div class="thumbnailWrapper">
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="imgContainer">
+              <img class="img-fluid imgMod bandana" src="assets/images/Comic-Book-Finder.png" alt="comic book finder">
+              <a class="projectName" href="../Project-1/index.html"><p>Comic Book Finder</p></a>
+            </div>
+      </div>
+
+        <div class="col-md-4">
+          <div class="imgContainer">
+            <img class="img-fluid imgMod" src="assets/images/GifTasticMindBlowers.png" alt="gif generator">
+            <a class="projectName" href="../GifTastic/index.html"><p>Gif Generator</p></a>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="imgContainer">
+            <img class="img-fluid imgMod" src="assets/images/Crystal-Collector.png" alt="crystal collector">
+            <a class="projectName" href="../Crystal-Collector/index.html"><p>Crystal Collector</p></a>
+            </div>
+        </div>
+    
+      </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="imgContainer">
+              <img class="img-fluid imgMod" src="assets/images/Train-Scheduler.png" alt="train scheduler">
+              <a class="projectName" href="../Train-Scheduler/index.html"><p>Train Scheduler</p></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="imgContainer">
+            <img class="img-fluid imgMod" src="assets/images/liri-concert-this.png" alt="Liri">
+            <a class="projectName" href="https://github.com/joelramires/liri-node-app"><p>Liri</p></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="imgContainer">
+            <img class="img-fluid imgMod" src="assets/images/crystalcollector.png" alt="TBD">
+            <a class="projectName" href="#"><p>TBD</p></a>
+          </div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+<!-- end of portfolio section -->
+<!-- contact me section -->
+<section class="contact" id="contactSection">
+  <div class="container">
+    <h1 id="contactText"><strong>Contact Me</strong></h1>
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 id="my-email">jramirezjr87@gmail.com</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+
+          <ul class="list-inline mb-0">
+
+              <li class="list-inline-item">
+                <a class="btn btn-outline-dark btn-social text-center rounded-circle" href="https://www.linkedin.com/in/joel-ramirez-8642b19a/" target="_blank">
+                  <i class="fa fa-fw fa-linkedin"></i>
+                </a>
+              </li>
+
+              <li class="list-inline-item">
+                  <a class="btn btn-outline-dark btn-social text-center rounded-circle" href="https://github.com/joelramires" target="_blank">
+                    <i class="fa fa-fw fa-github"></i>
+                  </a>
+              </li>
+            </ul>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- end of contact me section -->
       <!-- Footer -->
       <footer class="footer">
       <div class="container">
          <span class="text-muted">&copy;Copyright 2019 Joel Ramirez</span>
       </div>
+
+      
      </footer>
      <!-- End Footer -->
 
